@@ -1,2 +1,2 @@
-- [网络文学创作新手指南](网络文学创作新手指南)
-- [Example Second Page](second-page)
+- [网络文学创作新手指南](README)
+- [其他](second-page)
