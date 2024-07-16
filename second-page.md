@@ -1,3 +1,3 @@
-# Example Second Page
+# 网络作家提升指南
 
 This is an example second page that will appear in the Docsify Sidebar.
