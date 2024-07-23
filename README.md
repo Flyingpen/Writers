@@ -1,6 +1,6 @@
-# 网络文学作家指南
+# 网络文学创作新手指南
 
-> A simple [Docsify](https://github.com/docsifyjs/docsify/) template for creating Markdown-based documentation sites, with no build process required.
+> 完全免费的网络文学创作教程，取材于多名网文编辑。
 
 ## Site Setup
 
