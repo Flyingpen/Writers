@@ -5,19 +5,19 @@
 ## Site Setup
 
 ### Static Webserver
-Upload these template files to any static web server. The file `.nojekyll` is only required if hosting the site on GitHub Pages and otherwise can be removed.                     
+将这些模板文件上传到任何静态网站服务器。只有在 GitHub Pages 上托管网站时才需要 .nojekyll 文件，否则可以删除。                        
 
 ### GitHub Pages
 
 #### Hosting Site
 
-To host this template on GitHub Pages do the following:   
+要在 GitHub 页面上托管此模板，请执行以下操作：     
 
-1. Log into GitHub if you have not done so already  
-2. Tap the **Use this template** button in the upper-right of this GitHub Repository and choose **Create a new repository**
-3. Enter a name for your new Repository and then tap the **Create repository** button
-4. Once your new Repostitory is created go to **Settings**, then select **Pages** from the left-hand sidebar, and under **Branch** choose **main** and then tap the **Save** button
-5. Wait a minute or two and refresh the same **Pages** page - once your site is ready a message will be displayed at the top of the screen along with a site link and a **Visit site** button
+1.登录 GitHub（如果尚未登录
+2.点击此 GitHub 仓库右上方的**使用此模板**按钮，然后选择**创建新仓库**
+3.输入新仓库的名称，然后点击**创建仓库**按钮
+4.新版本库创建后，进入**设置**，然后从左侧边栏选择**页面**，在**分支**下选择**主**，然后点击**保存**按钮
+5.等待一两分钟并刷新相同的**页面**页面--一旦你的网站准备就绪，屏幕顶部会显示一条信息以及一个网站链接和一个**访问网站**按钮。
 
 #### Editing Content
 
@@ -30,5 +30,5 @@ Run `npx serve .` (Node.js users) or `python -m http.server 8000` (Python users)
 
 To learn more about using Docsify, visit https://docsify.js.org.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgwMDIwNTYwXX0=
+eyJoaXN0b3J5IjpbLTQ3ODIyODM1MV19
 -->
