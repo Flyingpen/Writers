@@ -5,15 +5,15 @@
 ## Site Setup
 
 ### Static Webserver
-Upload these template files to any static web server. The file `.nojekyll` is only required if hosting the site on GitHub Pages and otherwise can be removed.
+Upload these template files to any static web server. The file `.nojekyll` is only required if hosting the site on GitHub Pages and otherwise can be removed.                     
 
 ### GitHub Pages
 
 #### Hosting Site
 
-To host this template on GitHub Pages do the following:  
+To host this template on GitHub Pages do the following:   
 
-1. Log into GitHub if you have not done so already
+1. Log into GitHub if you have not done so already  
 2. Tap the **Use this template** button in the upper-right of this GitHub Repository and choose **Create a new repository**
 3. Enter a name for your new Repository and then tap the **Create repository** button
 4. Once your new Repostitory is created go to **Settings**, then select **Pages** from the left-hand sidebar, and under **Branch** choose **main** and then tap the **Save** button
@@ -29,3 +29,6 @@ Run `npx serve .` (Node.js users) or `python -m http.server 8000` (Python users)
 ## Docsify Documentation
 
 To learn more about using Docsify, visit https://docsify.js.org.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbOTgwMDIwNTYwXX0=
+-->
