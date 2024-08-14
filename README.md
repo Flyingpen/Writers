@@ -14,10 +14,15 @@
 要在 GitHub 页面上托管此模板，请执行以下操作：     
 
 1.登录 GitHub（如果尚未登录
+
 2.点击此 GitHub 仓库右上方的**使用此模板**按钮，然后选择**创建新仓库**
+
 3.输入新仓库的名称，然后点击**创建仓库**按钮
+
 4.新版本库创建后，进入**设置**，然后从左侧边栏选择**页面**，在**分支**下选择**主**，然后点击**保存**按钮
+
 5.等待一两分钟并刷新相同的**页面**页面--一旦你的网站准备就绪，屏幕顶部会显示一条信息以及一个网站链接和一个**访问网站**按钮。
+
 
 #### Editing Content
 
@@ -30,5 +35,5 @@ Run `npx serve .` (Node.js users) or `python -m http.server 8000` (Python users)
 
 To learn more about using Docsify, visit https://docsify.js.org.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3ODIyODM1MV19
+eyJoaXN0b3J5IjpbLTMxNjE4MTQyOV19
 -->
