@@ -1,5 +1,5 @@
 
-# 学习笔记
+# HTML5语言
 
 ## VSCode常用快捷键列表
 
@@ -587,5 +587,5 @@ div 容器元素，也是页面中见到最多的元素
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2MDMzMTIzXX0=
+eyJoaXN0b3J5IjpbLTk2NjYwMjQ0Miw3MTYwMzMxMjNdfQ==
 -->
