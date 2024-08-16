@@ -1,39 +1,591 @@
-# 网络文学创作新手指南
 
-> 完全免费的网络文学创作教程，取材于多名网文编辑。
+# 学习笔记
 
-## Site Setup
+## VSCode常用快捷键列表
 
-### Static Webserver
-将这些模板文件上传到任何静态网站服务器。只有在 GitHub Pages 上托管网站时才需要 .nojekyll 文件，否则可以删除。                        
+- **代码格式化**：Shift+Alt+F
 
-### GitHub Pages
+- **向上或向下移动一行**：AIt+Up或AIt+Down
 
-#### Hosting Site
+- **快速复制一行代码**：Shit+AIt+Up或Shif+At+Down
 
-要在 GitHub 页面上托管此模板，请执行以下操作：     
+- **快速保存**：ct+S
 
-1.登录 GitHub（如果尚未登录
+- **快速查找**：Ctrl+F
 
-2.点击此 GitHub 仓库右上方的**使用此模板**按钮，然后选择**创建新仓库**
+- **快速替换**：CtrlH
 
-3.输入新仓库的名称，然后点击**创建仓库**按钮
+## HTML5介绍
 
-4.新版本库创建后，进入**设置**，然后从左侧边栏选择**页面**，在**分支**下选择**主**，然后点击**保存**按钮
+HTML5是用来描述网页的一种语言，被称为超文本标记语言。
 
-5.等待一两分钟并刷新相同的**页面**页面--一旦你的网站准备就绪，屏幕顶部会显示一条信息以及一个网站链接和一个**访问网站**按钮。
+用HTML5编写的文件，后缀以.html结尾。
 
+HTML是一种标记语言，标记语言是一套标记标签。
 
-#### Editing Content
+标签是由尖括号包围的关键字，例如：`<html></html>`
 
-How about editing the content of your new Docsify site on GitHub Pages? View the Markdown page you want to edit (for example, **README.md**) and tap the **Pencil Icon**, then save any changes by tapping the green **Commit changes...** button. In just a few moments the Docsify site will be automatically updated to reflect those changes.
+标签有两种表现形式：
 
-### Viewing Locally 
-Run `npx serve .` (Node.js users) or `python -m http.server 8000` (Python users) in the repo folder to serve run locally.
+> - 双标签，例如：`<html></html>`
 
-## Docsify Documentation
+> - 单标签，例如：`<img>`
 
-To learn more about using Docsify, visit https://docsify.js.org.
+### HTML5的DOCTYPE声明
+
+DOCTYPE是document type(文档类型)的缩写。
+
+是H5的声明位于文档的最前面，处于标签之前。
+
+他是网页必备的组成部分，避免浏览器的怪异模式。
+
+## HTML基本骨架标签
+
+### 不可见标签类型
+
+- head 定义文档头部，包括标题、位置以及其他文档的关系
+
+- title 定义文档的标题，是head标签必须包含的东西
+
+- meta 描述一个网页文档的属性、关键词等，例如utf-8
+
+### 可见标签类型
+
+- body 定义文档的主题，包含文本、超链接、图像、表格、列表等元素
+
+## 标题标签
+
+标题(Heading)是通过`<h1>-<h6>`标签进行定义的。
+
+>生成h1~h6快捷键：h$*6
+
+vscode中，直接输入`h1`回车即可成对的标题标签。
+
+### 标题标签位置摆放
+
+`<h1 align="">`
+
+- `<h1 align="left">`居左
+
+- `<h1 align="center">`居中
+
+- `<h1 align="right">`居右
+
+## 标签的段落、换行和水平线
+
+### 段落
+
+`<p>文本段落</p>`
+
+### 换行
+
+`<br/>` 单标签
+
+### 水平线
+
+`<hr />` 单标签，示例：
+
+`<hr color="" width="" size="" align="" />`注意空格
+
+属性类型
+
+- color:设置水平线的颜色
+
+- width:设置水平线的长度
+
+- size:设置水平线的高度（粗）
+
+- align:设置水平线的对齐方式（默认居中）。可取值left|right
+
+## 标签的图片用法
+
+`<img src="" alt="" width="" height="" title="">`
+
+- img是单标签，不需要闭合
+
+- src 路径
+
+- alt 规定图像的替代文本（当图片失效时）
+
+- width 规定图像的宽度
+
+- height 规定图像的高度
+
+- title 鼠标悬停时图片上给出的文本提示
+
+### 图片路径
+
+- **绝对路径**：电脑盘符的地址(几乎不考虑)
+
+- **相对路径**：如果两者在同一路径下，可直接访问
+
+- 子级关系：`/`
+
+- 父级关系：`../`
+
+- 同级关系：`./`
+
+- **网络路径**：一个具体的url网络地址，即图床图片
+
+## 标签之超文本链接
+
+`<a href="url">链接文本</a>` 示例
+
+超链接可以是一个字、一个词、一组词，或者图像。通过点击超文本链接，跳转到新的文档或当前文档的某一个部分。
+
+- 使用`href`属性来描述链接的地址
+
+- 默认情况下，链接将以以下形式出现在浏览器中
+
+- 一个为访问过的链接，显示为蓝色字体并有下划线；
+
+- 访问过的链接，显示为紫色并有下划线；
+
+- 点击链接时，链接显示为红色并有下划线。
+
+- 特别提示
+
+- CSS样式会修改掉这些默认效果
+
+## 标签之文本
+
+`<em>`定义着重文字
+
+`<b>`定义粗体
+
+`<i>`定义斜体
+
+`<strong>`定义加重语气
+
+`<del>`定义删除字
+
+`<span>`没有特点的含义,css语言有用
+
+## 列表标签
+
+### 有序列表
+
+有序列表是一列项目，列表项目使用数字进行标记。
+
+有序列表始于`<ol></ol>`标签，每个列表项又始于<li>标签。
+
+示例：
+
+```
+
+<ol>
+
+<li>哈哈</li>
+
+<li>呵呵</li>
+
+<li>嘿嘿</li>
+
+<li>吼吼</li>
+
+<li>哒哒</li>
+
+</ol>
+
+```
+
+#### type属性
+
+`<ol>`属性的type拥有以下选项
+
+1 表示列表项目用数字符号（1，2，3）
+
+a 表示列表项目用小写字母
+
+A 表示列表项目用大写字母
+
+i 表示列表项目用小写罗马数字
+
+I 表示列表项目用大写罗马数字
+
+示例：
+
+```
+
+<ol type="1">
+
+<li>哈哈</li>
+
+</ol>
+
+```
+
+### 无序列表
+
+无序列表使用粗体圆点进行标记
+
+无序列表始于<ul>标签，每个列表始于<li>标签。
+
+示例：
+
+```
+
+<ul>
+
+<li>哈哈</li>
+
+<li>呵呵</li>
+
+<li>嘿嘿</li>
+
+<li>吼吼</li>
+
+<li>哒哒</li>
+
+</ul>
+
+```
+
+#### 无序列表属性
+
+`<ul>`属性的type拥有的选项有：
+
+- disc 默认实心圆
+
+- circle 空心圆
+
+- square 小方块
+
+- none 不显示
+
+示例：
+
+```
+
+<ul type="circle">
+
+<li>哈哈</li>
+
+<li>呵呵</li>
+
+</ul>
+
+```
+
+快捷键，快速生成ul+li的布局
+
+ul>li*3
+
+**提示**：*有序列表和无序列表，都可以互相嵌套。*
+
+## 表格标签
+
+**表格组成的特点 **
+
+以单元格为单位。同行等高，同列等宽。
+
+### 表格组合标签
+
+表格的元素由以下构成：
+
+```
+
+<table> \\双标签，代表表格
+
+<tr> \\双标签，代表行
+
+<td></td> \\双标签，代表单元格，有多少<td>就有多少列
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+```
+
+快速生成表格结构：table>tr*2>td*2{单元格}
+
+### 表格属性
+
+- border:设置表格边框
+
+- width:设置表格宽度
+
+- height:设置表格高度
+
+示例：
+
+```
+
+<table border="1">
+
+<tr>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+```
+
+### 单元格合并
+
+- 水平合并：colspan
+
+- 垂直合并：rowspan
+
+示例：
+
+```
+
+水平合并原则：保留左边，删除右边
+
+<tr>
+
+<td>单元格1</td>
+
+<td colspan="2">单元格2&3</td>
+
+<td>单元格4</td>
+
+<td>单元格5</td>
+
+</tr>
+
+```
+
+```
+
+垂直合并原则：保留上边，删除下边
+
+<tr>
+
+<td>单元格1</td>
+
+<td rowspan="2">单元格2&7</td>
+
+<td>单元格3</td>
+
+<td>单元格4</td>
+
+<td>单元格5</td>
+
+</tr>
+
+<tr>
+
+<td>单元格6</td>
+
+<td>单元格8</td>
+
+<td>单元格9</td>
+
+<td>单元格10</td>
+
+</tr>
+
+```
+
+```
+
+嵌套合并原则：一样，合并谁、删除谁
+
+<tr>
+
+<td colspan="2" rowspan="2">单元格16</td>
+
+<td>单元格18</td>
+
+<td>单元格19</td>
+
+<td>单元格20</td>
+
+</tr>
+
+<tr>
+
+<td>单元格23</td>
+
+<td>单元格24</td>
+
+<td>单元格25</td>
+
+</tr>
+
+```
+
+## From表单
+
+让网页具有交互性，用来给用户填写信息，从而采集用户信息。
+
+所有用户输入的地方，都用from表单填写，如登陆注册、搜索框等。
+
+表单是由容器和控件组成的，一个表单一般应该包含用户填写信息的输入框，提交按钮等。
+
+这些输入框，按钮叫做控件，表单就是容器，它能够容纳各种各样的控件。
+
+```
+
+<form action="url" method="get|post" name="myform"></form>
+
+```
+
+### 属性说明
+
+- action 服务器地址
+
+- name 表单名称
+
+- method 数据提交
+
+- get 一般提交较少数据
+
+- post 用来提交大量数据
+
+### 表单元素
+
+一个完整的表单包含三个基本组成部分：标签、域、按钮
+
+- 标签
+
+- 域
+
+- 按钮
+
+```
+
+<form >
+
+<input type="text">//输入框
+
+<input type="submit">//一个按钮
+
+<input type="button" value="一个按钮">// 也是一个按钮
+
+</form>
+
+```
+
+#### 文本框
+
+文本域通过` <input type="text">`标签来设定，可键入字母、数字等内容。
+
+- text 任意文本
+
+- password 密码框
+
+- submit 按钮
+
+- value 自定义框中的文本
+
+```
+
+<form action="">
+
+用户名：<input type="text" name="usename" value="请输入用户名"> // name对应数据库的表头
+
+<br> //换行符
+
+密码：<input type="password" name="password" value="请输入密码"> //文本会隐藏，变为****
+
+<br>
+
+验证码：<input type="text" name="yanzheng" value="请输入验证码">
+
+<br>
+
+<input type="submit" value="按一下登录">//
+
+</form>
+
+```
+
+## 块元素和内联元素
+
+HTML5按照内容模型区分元素，分为：
+
+`元数据型、区块型、标题型、文档流型、语句型、内嵌型、交互型 `
+
+元素不属于任何一个类别的，被称之为穿透的。
+
+元素可能不止一个类别，被称之为混合的。
+
+初学者只需要了解块元素和内联元素即可。
+
+|块级元素|内联元素|
+|----|----|
+|块元素会在页面中独占一行，自上向下|内联元素不独占一行，从左到右|
+|可以设置width,height属性|设置width,height属性无效|
+|一般可以包含行内元素和其他块级元素|仅包含内联元素不包含块级元素|
+
+### 常见的块级元素
+
+`div,form,h1~h6,hr,p,table,ul,等等`
+
+### 常见内联元素
+
+`a、b、em、i、span、strongs等`
+
+### 行内块级元素(特点：不换行、能够识别宽高)
+
+`button、img、inputs等`
+
+## HTML5 新增标签
+
+div 容器元素，也是页面中见到最多的元素
+
+曾经需要用<div id="header">进行各个容器的命名，阅读起来困难
+
+参考以下案例：
+
+```
+
+<div id="header"></div>
+
+<div id="nav"></div>
+
+<div id="article">
+
+<div id="section"></div>
+
+</div>
+
+<div id="silder"></div>
+
+<div id="footer"></div>
+
+```
+
+现在新增了以下标签，更加容易识别和阅读：
+
+```
+
+<header></header> //头部区域
+
+<nav></nav>//导航区域
+
+<article>//定义文档中的节，比如章节、页脚、页眉、摘要
+
+<section></section> 代表一个独立完整的内容块，比如一篇文章、一个帖子、一个评论等
+
+</article>
+
+<aside></aside> 侧边栏
+
+<footer></footer> 底部区域
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjE4MTQyOV19
+eyJoaXN0b3J5IjpbNzE2MDMzMTIzXX0=
 -->
